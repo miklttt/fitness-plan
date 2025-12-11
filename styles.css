@@ -1,1 +1,135 @@
-body { font-family: Arial; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: #fafafa;
+  color: #333;
+}
+
+/* 导航栏 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1b9aaa;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+  z-index: 1000;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 14px;
+  font-weight: 500;
+}
+
+/* 顶部标题 */
+.header {
+  padding: 90px 20px 40px;
+  text-align: center;
+  background: #d1f5f2;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 20px;
+}
+
+/* 每日训练卡片 */
+.day-card {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.day-header {
+  background: #1b9aaa;
+  color: white;
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.day-content {
+  padding: 12px 20px;
+  display: none;
+}
+
+.day-content ul {
+  padding-left: 20px;
+}
+
+.day-content li {
+  margin: 8px 0;
+}
+
+.day-content a {
+  color: #1b9aaa;
+  margin-left: 6px;
+}
+
+/* 营养追踪器 */
+.section-title {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.nutrition-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.nutrition-grid input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+.update-btn {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #1b9aaa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* 进度条 */
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  height: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 16px;
+  width: 0%;
+  background: #1b9aaa;
+  transition: 0.3s;
+}
+
+/* 手机版适配 */
+@media (max-width: 600px) {
+  .nutrition-grid {
+    flex-direction: column;
+  }
+}
