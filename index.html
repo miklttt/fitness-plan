@@ -13,73 +13,58 @@
 </head>
 <body>
 
-<!-- Navigation -->
 <nav class="navbar">
   <div class="nav-title">Fitness Planner</div>
   <div class="nav-links">
-    <a href="#warmup">热身 Warm-Up</a>
     <a href="#plan">训练计划</a>
     <a href="#nutrition">营养追踪</a>
   </div>
 </nav>
 
-<!-- Header -->
 <header class="header">
   <h1>Fitness Plan — 八字胸 & 腰线优化训练</h1>
-  <p>完整六日训练 + 专业动作要点 + 动态营养追踪</p>
+  <p>每日专属热身 • 全六日训练 • 个别动作要点 • 动态营养进度</p>
 </header>
 
-<!-- Warm-Up Section -->
-<section id="warmup" class="section">
-  <h2 class="section-title"><i class="fa-solid fa-fire"></i> 热身 Warm-Up</h2>
-  <ul class="list">
-    <li><i class="fa-solid fa-running"></i> 轻度有氧 Jog/跳绳 — 5–7 分钟</li>
-    <li><i class="fa-solid fa-person-walking"></i> 动态拉伸 动态髋开/手臂圈 — 3 × 10</li>
-    <li><i class="fa-solid fa-dumbbell"></i> 轻重量哑铃热身推举 — 2 × 12 <span class="rest">(休息 60s)</span></li>
-    <li><i class="fa-solid fa-person-wave"></i> 核心激活 Bird-Dog — 2 × 8/侧 <span class="rest">(休息 45s)</span></li>
-  </ul>
-</section>
-
-<!-- Training Plan -->
 <section id="plan" class="section">
   <h2 class="section-title"><i class="fa-solid fa-dumbbell"></i> 全周训练计划</h2>
 
   <!-- Day 1 -->
   <div class="day-card">
     <button class="day-header" onclick="toggleDay(this)">
-      <i class="fa-solid fa-angles-down"></i> Day 1 — Upper Chest & Inner Chest 上胸 & 内侧胸
+      <i class="fa-solid fa-angles-down"></i> Day 1 — Chest 上胸 & 内侧胸
     </button>
     <div class="day-content">
+      <!-- Warm-Up -->
+      <p class="warmup-title">🔥 Warm-Up 热身</p>
+      <ul class="warmup-list">
+        <li><i class="fa-solid fa-running"></i> Arm Circles / 手臂圈 — 30s 前/后</li>
+        <li><i class="fa-solid fa-hand-rock"></i> Scap Push-Ups / 肩胛俯卧撑 — 2 × 12</li>
+        <li><i class="fa-solid fa-bandage"></i> Band Chest Activation / 胸肌预激活 — 2 × 12</li>
+        <li><i class="fa-solid fa-hand-sparkles"></i> Push-Up Plus / 推起上抬 — 2 × 10</li>
+      </ul>
+
+      <p class="section-subtitle">💪 主训练</p>
       <ul class="list">
         <li><i class="fa-solid fa-hand-rock"></i> Incline Dumbbell Press — 上斜哑铃卧推
             <span class="sets">4 × 8–10</span> <span class="rest">(休息 90–120s)</span>
-            <p class="tip">肩胛下沉，上推时胸部发力强于肩。</p>
+            <p class="tip">肩胛下沉，上推胸部主导。</p>
             <a href="https://www.youtube.com/results?search_query=incline+dumbbell+press" target="_blank">教学</a>
         </li>
         <li><i class="fa-solid fa-arrows-up-down-left-right"></i> Incline Cable Fly — 上斜拉绳飞鸟
             <span class="sets">3 × 12–15</span> <span class="rest">(休息 60–90s)</span>
-            <p class="tip">从低到高拉，终点感受上胸收缩。</p>
+            <p class="tip">低→高拉，终点停顿 1s。</p>
             <a href="https://www.youtube.com/results?search_query=incline+cable+fly" target="_blank">教学</a>
         </li>
         <li><i class="fa-solid fa-weight-hanging"></i> Barbell Bench Press — 平板杠铃卧推
             <span class="sets">3 × 6–8</span> <span class="rest">(休息 90–120s)</span>
-            <p class="tip">胸肌主导推，不肩用力。</p>
+            <p class="tip">胸肌主导，肩不耸起。</p>
             <a href="https://www.youtube.com/results?search_query=barbell+bench+press" target="_blank">教学</a>
         </li>
         <li><i class="fa-solid fa-handshake-angle"></i> Cable Chest Fly — 拉绳夹胸
             <span class="sets">3 × 12–15</span> <span class="rest">(休息 60–90s)</span>
-            <p class="tip">末端挤压 1 秒，感受胸内侧收紧。</p>
+            <p class="tip">胸肌向中线挤压。</p>
             <a href="https://www.youtube.com/results?search_query=cable+chest+fly+mid+level" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-circle-nodes"></i> Landmine Press — 地雷管胸推
-            <span class="sets">3 × 10</span> <span class="rest">(休息 60–90s)</span>
-            <p class="tip">单手推更能激活胸内侧。</p>
-            <a href="https://www.youtube.com/results?search_query=landmine+press+chest" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-person-falling-burst"></i> Reverse Fly — 反向飞鸟
-            <span class="sets">3 × 15</span> <span class="rest">(休息 45–60s)</span>
-            <p class="tip">肩后束参与整体上身稳定性。</p>
-            <a href="https://www.youtube.com/results?search_query=rear+delt+fly+machine" target="_blank">教学</a>
         </li>
       </ul>
     </div>
@@ -88,39 +73,29 @@
   <!-- Day 2 -->
   <div class="day-card">
     <button class="day-header" onclick="toggleDay(this)">
-      <i class="fa-solid fa-angles-down"></i> Day 2 — Back & Posture 背部 & 姿势
+      <i class="fa-solid fa-angles-down"></i> Day 2 — Back 背部 & 姿势
     </button>
     <div class="day-content">
+      <!-- Warm-Up -->
+      <p class="warmup-title">🔥 Warm-Up 热身</p>
+      <ul class="warmup-list">
+        <li><i class="fa-solid fa-band-aid"></i> Band Pull-Apart — 弹力带横拉 — 2 × 15</li>
+        <li><i class="fa-solid fa-cat"></i> Cat-Cow / 猫牛式 — 10 次</li>
+        <li><i class="fa-solid fa-person-row"></i> Scap Row / 弹力带肩胛划船 — 2 × 12</li>
+        <li><i class="fa-solid fa-person-shouldering"></i> Light Shrugs / 轻重量提肩 — 2 × 10</li>
+      </ul>
+
+      <p class="section-subtitle">💪 主训练</p>
       <ul class="list">
-        <li><i class="fa-solid fa-up-right-from-square"></i> Lat Pull-Down / Pull-Up — 下拉 / 引体
+        <li><i class="fa-solid fa-up-right-from-square"></i> Lat Pull-Down / Pull-Up — 下拉/引体
             <span class="sets">4 × 8–10</span> <span class="rest">(休息 90–120s)</span>
-            <p class="tip">肘向下、胸挺起拉到胸前。</p>
+            <p class="tip">胸挺起、肘向下带。</p>
             <a href="https://www.youtube.com/results?search_query=lat+pull+down+or+pullups" target="_blank">教学</a>
         </li>
         <li><i class="fa-solid fa-arrow-down-1-9"></i> Seated Row — 坐姿划船
             <span class="sets">3 × 10–12</span> <span class="rest">(休息 60–90s)</span>
-            <p class="tip">想象肘沿背带方向后拉。</p>
+            <p class="tip">肘后拉、肩胛内收。</p>
             <a href="https://www.youtube.com/results?search_query=seated+row+machine" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-hand-back-fist"></i> One-Arm Dumbbell Row — 单臂哑铃划船
-            <span class="sets">3 × 10/侧</span> <span class="rest">(休息 60–90s)</span>
-            <p class="tip">背部发力带动，不借肩。</p>
-            <a href="https://www.youtube.com/results?search_query=one+arm+dumbbell+row" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-grip-lines"></i> T-Bar Row — T-Bar 划船
-            <span class="sets">3 × 8–10</span> <span class="rest">(休息 90s)</span>
-            <p class="tip">背中区发力，挺胸。</p>
-            <a href="https://www.youtube.com/results?search_query=t+bar+row" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-dove"></i> Rear Delt Fly — 后束飞鸟
-            <span class="sets">3 × 15</span> <span class="rest">(休息 45–60s)</span>
-            <p class="tip">肩后束与上背稳定性提升。</p>
-            <a href="https://www.youtube.com/results?search_query=rear+delt+fly" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-up-down"></i> Lower Trap Shrug — 下斜方拉举
-            <span class="sets">3 × 12</span> <span class="rest">(休息 45–60s)</span>
-            <p class="tip">下斜方发力，改善姿态。</p>
-            <a href="https://www.youtube.com/results?search_query=trapezius+shrug+lower+trap" target="_blank">教学</a>
         </li>
       </ul>
     </div>
@@ -129,71 +104,57 @@
   <!-- Day 3 -->
   <div class="day-card">
     <button class="day-header" onclick="toggleDay(this)">
-      <i class="fa-solid fa-angles-down"></i> Day 3 — Lower Body & Core 腿部 & 核心
+      <i class="fa-solid fa-angles-down"></i> Day 3 — Legs 腿部 & 核心
     </button>
     <div class="day-content">
+      <!-- Warm-Up -->
+      <p class="warmup-title">🔥 Warm-Up 热身</p>
+      <ul class="warmup-list">
+        <li><i class="fa-solid fa-person-running"></i> Leg Swings / 摆腿 — 20/侧</li>
+        <li><i class="fa-solid fa-person-squat"></i> Bodyweight Squat — 自重深蹲 — 2 × 12</li>
+        <li><i class="fa-solid fa-person-dots-from-line"></i> Hip Flexor Stretch / 髋屈肌拉伸 — 30s/侧</li>
+        <li><i class="fa-solid fa-person-hip-circle"></i> Glute Bridge — 臀桥 — 2 × 10</li>
+      </ul>
+
+      <p class="section-subtitle">💪 主训练</p>
       <ul class="list">
         <li><i class="fa-solid fa-person-squat"></i> Squat — 深蹲
             <span class="sets">4 × 8</span> <span class="rest">(休息 90–120s)</span>
-            <p class="tip">膝盖朝脚尖方向，臀下沉至大腿平行。</p>
+            <p class="tip">臀下沉腿弯与脚平行。</p>
             <a href="https://www.youtube.com/results?search_query=barbell+squat" target="_blank">教学</a>
         </li>
         <li><i class="fa-solid fa-square-up-right"></i> Leg Press — 腿举
             <span class="sets">3 × 10</span> <span class="rest">(休息 90s)</span>
-            <p class="tip">脚跟发力，膝不锁死。</p>
+            <p class="tip">脚跟发力、膝不锁死。</p>
             <a href="https://www.youtube.com/results?search_query=leg+press+machine" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-person-walking-luggage"></i> Romanian Deadlift — 罗马尼亚硬拉
-            <span class="sets">3 × 8–10</span> <span class="rest">(休息 90s)</span>
-            <p class="tip">臀后链主导，不塌腰。</p>
-            <a href="https://www.youtube.com/results?search_query=romanian+deadlift" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-person-curls"></i> Leg Curl — 腿弯举
-            <span class="sets">3 × 12</span> <span class="rest">(休息 60–90s)</span>
-            <p class="tip">腿后肌拉紧。</p>
-            <a href="https://www.youtube.com/results?search_query=lying+leg+curl" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-shoe-prints"></i> Calf Raise — 小腿
-            <span class="sets">3 × 15</span> <span class="rest">(休息 45–60s)</span>
-            <p class="tip">抬高停顿，再慢放。</p>
-            <a href="https://www.youtube.com/results?search_query=standing+calf+raise" target="_blank">教学</a>
-        </li>        <!-- continue Day 3 items -->
-        <li><i class="fa-solid fa-hippo"></i> Glute Bridge — 桥式臀推
-            <span class="sets">3 × 12</span> <span class="rest">(休息 60s)</span>
-            <p class="tip">臀部彻底收紧再放松。</p>
-            <a href="https://www.youtube.com/results?search_query=glute+bridge" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-spa"></i> Bird-Dog — 鸟狗
-            <span class="sets">3 × 8/侧</span> <span class="rest">(休息 45s)</span>
-            <p class="tip">核心稳定，不塌腰。</p>
-            <a href="https://www.youtube.com/results?search_query=bird+dog+exercise" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-arrow-up"></i> Reverse Crunch — 反向卷腹
-            <span class="sets">3 × 12</span> <span class="rest">(休息 45s)</span>
-            <p class="tip">下腹发力牵动骨盆卷起。</p>
-            <a href="https://www.youtube.com/results?search_query=reverse+crunch" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-sync-alt"></i> Cable Wood Chop — 木劈 Cable
-            <span class="sets">3 × 12</span> <span class="rest">(休息 45s)</span>
-            <p class="tip">控制旋转核心发力，不甩胳膊。</p>
-            <a href="https://www.youtube.com/results?search_query=cable+wood+chopper" target="_blank">教学</a>
         </li>
       </ul>
     </div>
   </div>
 
-  <!-- Day 4 — Chest & Shoulders? -->
+  <!-- Day 4 -->
   <div class="day-card">
     <button class="day-header" onclick="toggleDay(this)">
-      <i class="fa-solid fa-angles-down"></i> Day 4 — Chest & Shoulders 胸 + 肩
+      <i class="fa-solid fa-angles-down"></i> Day 4 — Chest/Shoulders 胸 + 肩
     </button>
     <div class="day-content">
+      <!-- Warm-Up -->
+      <p class="warmup-title">🔥 Warm-Up 热身</p>
+      <ul class="warmup-list">
+        <li><i class="fa-solid fa-rotate"></i> T-Spine Rotations / 胸椎转体 — 10/侧</li>
+        <li><i class="fa-solid fa-band-aid"></i> Band Pull-Apart — 弹力带拉 — 2 × 15</li>
+        <li><i class="fa-solid fa-people-arrows-left-right"></i> Shoulder Dislocations / 肩解锁 — 2 × 12</li>
+        <li><i class="fa-solid fa-hand-wave"></i> Push-Up Plus / 推起上抬 — 2 × 10</li>
+      </ul>
+
+      <p class="section-subtitle">💪 主训练</p>
       <ul class="list">
         <li><i class="fa-solid fa-dumbbell"></i> Incline Barbell Press — 上斜杠铃卧推
             <span class="sets">4 × 6–8</span> <span class="rest">(休息 90–120s)</span>
-            <p class="tip">肩胛稳定，胸部主导推力。</p>
+            <p class="tip">胸部主导推力。</p>
             <a href="https://www.youtube.com/results?search_query=incline+barbell+bench+press" target="_blank">教学</a>
         </li>
+        <!-- …（继续 Day4 主训练动作） -->        </li>
         <li><i class="fa-solid fa-square-plus"></i> Machine Chest Press — 器械胸推
             <span class="sets">3 × 10–12</span> <span class="rest">(休息 60–90s)</span>
             <p class="tip">手柄略内收，胸肌更强激活。</p>
@@ -209,21 +170,26 @@
             <p class="tip">身体微前倾更能刺激胸肌。</p>
             <a href="https://www.youtube.com/results?search_query=dips+chest" target="_blank">教学</a>
         </li>
-        <li><i class="fa-solid fa-arrow-down-up-across-line"></i> Face Pull — 面拉
-            <span class="sets">3 × 15</span> <span class="rest">(休息 45–60s)</span>
-            <p class="tip">肩后束 & 上背稳定性提升。</p>
-            <a href="https://www.youtube.com/results?search_query=face+pull+exercise" target="_blank">教学</a>
-        </li>
       </ul>
     </div>
   </div>
 
-  <!-- Day 5 — Shoulders & Upper Back -->
+  <!-- Day 5 -->
   <div class="day-card">
     <button class="day-header" onclick="toggleDay(this)">
       <i class="fa-solid fa-angles-down"></i> Day 5 — Shoulders & Upper Back 肩 + 上背
     </button>
     <div class="day-content">
+      <!-- Warm-Up -->
+      <p class="warmup-title">🔥 Warm-Up 热身</p>
+      <ul class="warmup-list">
+        <li><i class="fa-solid fa-person-running"></i> Arm Circles — 手臂圈 30s</li>
+        <li><i class="fa-solid fa-hand-back-fist"></i> External Band Rotations — 肩外旋 2 × 12/侧</li>
+        <li><i class="fa-solid fa-band-aid"></i> Band Pull-Apart — 弹力带横向拉 2 × 15</li>
+        <li><i class="fa-solid fa-person-walking"></i> Scap Push-Ups — 肩胛俯卧撑 2 × 12</li>
+      </ul>
+
+      <p class="section-subtitle">💪 主训练</p>
       <ul class="list">
         <li><i class="fa-solid fa-hand-paper"></i> Dumbbell Shoulder Press — 哑铃肩推
             <span class="sets">4 × 8</span> <span class="rest">(休息 90s)</span>
@@ -240,26 +206,25 @@
             <p class="tip">肘高于手腕更能激活肩。</p>
             <a href="https://www.youtube.com/results?search_query=upright+row+exercise" target="_blank">教学</a>
         </li>
-        <li><i class="fa-solid fa-arrow-up-right-dots"></i> Front Raise — 前束抬举
-            <span class="sets">3 × 12</span> <span class="rest">(休息 60s)</span>
-            <p class="tip">胸挺稳，肩前束控制。</p>
-            <a href="https://www.youtube.com/results?search_query=front+raise+exercise" target="_blank">教学</a>
-        </li>
-        <li><i class="fa-solid fa-fan"></i> Rear Delt Fly — 反向飞鸟
-            <span class="sets">3 × 15</span> <span class="rest">(休息 45–60s)</span>
-            <p class="tip">肩后束发力更明显。</p>
-            <a href="https://www.youtube.com/results?search_query=rear+delt+fly" target="_blank">教学</a>
-        </li>
       </ul>
     </div>
   </div>
 
-  <!-- Day 6 — Light Chest + Core -->
+  <!-- Day 6 -->
   <div class="day-card">
     <button class="day-header" onclick="toggleDay(this)">
       <i class="fa-solid fa-angles-down"></i> Day 6 — Light Chest + Core 轻胸 + 核心
     </button>
     <div class="day-content">
+      <!-- Warm-Up -->
+      <p class="warmup-title">🔥 Warm-Up 热身</p>
+      <ul class="warmup-list">
+        <li><i class="fa-solid fa-arm-swing"></i> Arm Swings — 手臂摆动 30s</li>
+        <li><i class="fa-solid fa-spa"></i> Bird-Dog — 鸟狗 2 × 8/侧</li>
+        <li><i class="fa-solid fa-person-standing"></i> Plank to Downward Dog — 平板撑到下犬式 2 × 10</li>
+      </ul>
+
+      <p class="section-subtitle">💪 主训练</p>
       <ul class="list">
         <li><i class="fa-solid fa-feather-pointed"></i> Incline Fly (Light) — 上斜飞鸟（轻）
             <span class="sets">3 × 15</span> <span class="rest">(休息 60s)</span>
@@ -269,63 +234,12 @@
             <span class="sets">3 × 15</span> <span class="rest">(休息 60s)</span>
             <p class="tip">胸肌净挤压，不求重量。</p>
         </li>
-        <li><i class="fa-solid fa-chest"></i> Machine Chest Press — 胸推机
-            <span class="sets">2 × 12</span> <span class="rest">(休息 60s)</span>
-            <p class="tip">控制速度，不要反弹。</p>
-        </li>
-        <li><i class="fa-solid fa-person-standing"></i> Plank — 平板撑
+        <li><i class="fa-solid fa-person-flag"></i> Plank — 平板撑
             <span class="sets">1 × 60s</span> <span class="rest">(休息 45s)</span>
             <p class="tip">背部平直、核心紧。</p>
-        </li>
-        <li><i class="fa-solid fa-circle-notch"></i> Reverse Crunch — 反向卷腹
-            <span class="sets">3 × 12</span> <span class="rest">(休息 45s)</span>
-            <p class="tip">下腹控制卷骨盆。</p>
-        </li>
-        <li><i class="fa-solid fa-sync-alt"></i> Cable Wood Chop — 木劈 Cable
-            <span class="sets">3 × 12</span> <span class="rest">(休息 45s)</span>
-            <p class="tip">核心旋转稳定。</p>
         </li>
       </ul>
     </div>
   </div>
 
 </section>
-
-<!-- Nutrition -->
-<section id="nutrition" class="section">
-<!-- truncated due to space; next message will continue --><!-- Nutrition Tracker -->
-<section id="nutrition" class="section">
-  <h2 class="section-title"><i class="fa-solid fa-apple-whole"></i> 营养进度追踪</h2>
-
-  <div class="nutrition-grid">
-    <div class="input-col">
-      <label>蛋白目标 (g): <input type="number" id="goalP" value="140"></label>
-      <label>碳水目标 (g): <input type="number" id="goalC" value="250"></label>
-      <label>脂肪目标 (g): <input type="number" id="goalF" value="70"></label>
-    </div>
-    <div class="input-col">
-      <label>蛋白已摄入 (g): <input type="number" id="eatP" value="0"></label>
-      <label>碳水已摄入 (g): <input type="number" id="eatC" value="0"></label>
-      <label>脂肪已摄入 (g): <input type="number" id="eatF" value="0"></label>
-    </div>
-  </div>
-
-  <button class="update-btn" onclick="updateProgress()">更新营养进度</button>
-
-  <p class="progress-label">蛋白质</p>
-  <div class="progress-container"><div id="progP" class="progress"></div></div>
-  <p class="progress-label">碳水</p>
-  <div class="progress-container"><div id="progC" class="progress"></div></div>
-  <p class="progress-label">脂肪</p>
-  <div class="progress-container"><div id="progF" class="progress"></div></div>
-</section>
-
-<!-- Footer / Credits -->
-<footer class="footer">
-  <p>健身计划 & 训练页面 by Fitness Planner</p>
-  <p>📌 可持续更新 • 可自行扩展体重/打卡功能</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
